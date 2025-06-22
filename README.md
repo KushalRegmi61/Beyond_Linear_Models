@@ -1,51 +1,87 @@
-Certainly. Here's your **Week 6: Beyond Linear Models** summary, rewritten in the same structured and professional format as your Week 5 output:
+# Week 6: Beyond Linear Models
+
+This week explored non-linear, interpretable, and probabilistic models that extend beyond the limitations of linear approaches. The focus was on implementing **Support Vector Machines (SVM)**, **K-Nearest Neighbors (KNN)**, **Naive Bayes**, and **Decision Trees** using real-world datasets and `scikit-learn`.
 
 ---
 
-### Week 6: Beyond Linear Models
+## Pre-Session
 
-#### Pre-Session Prep
+The pre-session notebooks introduced the core concepts, mathematical foundations, and practical implementations of four key model types:
 
-* Decision Tree fundamentals: impurity metrics (Gini, Entropy)
-* Handling continuous variables in decision trees
-* Manual construction of decision trees from scratch
-* Tree inducers and scikit-learn implementation
-* Overfitting prevention: early stopping, pruning
-* K-Nearest Neighbors (KNN): classification, regression, distance metrics (Brute Force, KD-Tree, Ball Tree)
-* Naive Bayes: probabilistic modeling and sentiment analysis
-* Support Vector Machines (SVM): margin maximization, kernel methods, C-SVM, ν-SVM variants
+### Repository Structure
 
-#### Live Session Recap
+```
+pre_session/
+    decision_tree_basics.ipynb
+    knn_modeling.ipynb
+    naive_bayes_sentiment.ipynb
+    svm_kernels_and_margin.ipynb
+data/
+    hotel_bookings.csv
+```
 
-* Applied tree-based models and compared them with linear baselines
-* Visualized decision structures for interpretability
-* Demonstrated overfitting control via early stopping and pruning
-* Explored regression and classification trees on real datasets
+### Topics Covered
 
-#### Post-Session Work
+* **Decision Trees**
+  ‣ Impurity metrics: Gini, Entropy
+  ‣ Manual tree construction, pruning, and early stopping
+  ‣ Overfitting prevention and visual interpretation
 
-Using a hotel booking demand dataset:
+* **K-Nearest Neighbors (KNN)**
+  ‣ Classification and regression use cases
+  ‣ Distance metrics: Euclidean, Manhattan
+  ‣ Optimizations with KD-Tree and Ball Tree structures
 
-1. **Classification Task:** Predicted booking cancellations (`is_canceled`) using a Decision Tree Classifier
+* **Naive Bayes**
+  ‣ Probabilistic classification using conditional independence
+  ‣ Applied to sentiment analysis with text-based features
 
-   * Evaluated performance with accuracy, confusion matrix, and classification report
-
-2. **Regression Task:** Estimated guest stay duration using regression trees on `stays_in_number_of_nights`
-
-   * Compared full-depth vs depth-limited models (MSE improved from 5.86 to 4.62)
-
-Key steps:
-
-* Label encoding of categorical features
-* Hyperparameter tuning (`max_depth`, `min_samples_split`)
-* Early stopping to prevent overfitting
-* Performance comparison of shallow vs deep trees
-
-> **Implementation Details:**
-> [GitHub – Decision Tree Models](https://github.com/KushalRegmi61/Fusemachines-AI-Fellowship)
-
-#### Key Insight
-
-> I learned how tree-based models, with thoughtful tuning and interpretability, serve as strong and flexible alternatives to linear models for both classification and regression tasks.
+* **Support Vector Machines (SVM)**
+  ‣ Maximum-margin classifiers
+  ‣ Kernel methods: linear, polynomial, RBF
+  ‣ `SVC` vs `NuSVC`, model tuning using `GridSearchCV`
 
 ---
+
+## Live Session
+
+* Built decision tree models and benchmarked against linear baselines
+* Applied pruning and interpretability techniques using visual tools
+
+---
+
+## Post-Session
+
+### Repository Structure
+
+```
+post_session/
+    decision_tree_classification_assignment.ipynb
+```
+
+### Task Overview
+
+Using the **Hotel Booking Demand** dataset (`hotel_bookings.csv`), a classification task was performed to predict booking cancellations:
+
+#### Task: Predict `is_canceled` with Decision Tree Classifier
+
+**Steps:**
+
+* Preprocessed data and applied label encoding to categorical features
+* Trained a decision tree with `scikit-learn`
+* Tuned hyperparameters: `max_depth`, `min_samples_split`
+* Compared shallow vs full-depth trees
+* Evaluated performance using accuracy, confusion matrix, and classification report
+
+> **Implementation Notebook:**
+> [decision\_tree\_classification\_assignment.ipynb](post_session/decision_tree_classification_assignment.ipynb)
+
+
+
+## Key Insight
+
+> I explored how SVM, KNN, Naive Bayes, and Decision Trees provide flexible and interpretable alternatives to linear models, each suited to different data types and decision boundaries.
+
+
+## FUlL FELLOWSHIP JOURNEY: 
+> [FellowShip Repo](https://github.com/KushalRegmi61/AI_Fellowship_FuseMachines/tree/master)
