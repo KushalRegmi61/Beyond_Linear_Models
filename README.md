@@ -14,7 +14,6 @@ The pre-session notebooks introduced the core concepts, mathematical foundations
 pre_session/
     decision_tree_basics.ipynb
     knn_modeling.ipynb
-    naive_bayes_sentiment.ipynb
     svm_kernels_and_margin.ipynb
 data/
     hotel_bookings.csv
@@ -34,7 +33,7 @@ data/
 
 * **Naive Bayes**
   ‣ Probabilistic classification using conditional independence
-  ‣ Applied to sentiment analysis with text-based features
+  ‣ Learn to Apply sentiment analysis with text-based features
 
 * **Support Vector Machines (SVM)**
   ‣ Maximum-margin classifiers
