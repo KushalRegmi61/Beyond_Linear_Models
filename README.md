@@ -22,23 +22,23 @@ data/
 ### Topics Covered
 
 * **Decision Trees**
-  ‣ Impurity metrics: Gini, Entropy
-  ‣ Manual tree construction, pruning, and early stopping
-  ‣ Overfitting prevention and visual interpretation
+  - Impurity metrics: Gini, Entropy
+  - Manual tree construction, pruning, and early stopping
+  - Overfitting prevention and visual interpretation
 
 * **K-Nearest Neighbors (KNN)**
-  ‣ Classification and regression use cases
-  ‣ Distance metrics: Euclidean, Manhattan
-  ‣ Optimizations with KD-Tree and Ball Tree structures
+  - Classification and regression use cases
+  - Distance metrics: Euclidean, Manhattan
+  - Optimizations with KD-Tree and Ball Tree structures
 
 * **Naive Bayes**
-  ‣ Probabilistic classification using conditional independence
-  ‣ Learn to Apply sentiment analysis with text-based features
+  - Probabilistic classification using conditional independence
+  - Learn to Apply sentiment analysis with text-based features
 
 * **Support Vector Machines (SVM)**
-  ‣ Maximum-margin classifiers
-  ‣ Kernel methods: linear, polynomial, RBF
-  ‣ `SVC` vs `NuSVC`, model tuning using `GridSearchCV`
+  - Maximum-margin classifiers
+  - Kernel methods: linear, polynomial, RBF
+  - `SVC` vs `NuSVC`, model tuning using `GridSearchCV`
 
 ---
 
