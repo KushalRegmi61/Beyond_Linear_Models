@@ -1,23 +1,27 @@
 # Week 6: Beyond Linear Models
 
-This week explored non-linear, interpretable, and probabilistic models that extend beyond the limitations of linear approaches. The focus was on implementing **Support Vector Machines (SVM)**, **K-Nearest Neighbors (KNN)**, **Naive Bayes**, and **Decision Trees** using real-world datasets and `scikit-learn`.
+This week focused on **Beyond Linear Models: Discriminative and Generative Techniques**, covering non-linear, interpretable classifiers and probabilistic methods beyond the limitations of linear decision approaches. The focus was on implementing **Support Vector Machines (SVM)**, **K-Nearest Neighbors (KNN)**, **Naive Bayes**, and **Decision Trees** using real-world datasets and `scikit-learn`.
 
----
+
+
+### Repository Structure
+
+```
+data/
+    airnb_guest_arrival.csv
+post_session/
+    hotel_bookings_predicitions.ipynb
+pre_session/
+    decisionTree.ipynb
+    knn_classifier.ipynb
+    implementing_svm.ipynb
+
+```
 
 ## Pre-Session
 
 The pre-session notebooks introduced the core concepts, mathematical foundations, and practical implementations of four key model types:
 
-### Repository Structure
-
-```
-pre_session/
-    decision_tree_basics.ipynb
-    knn_modeling.ipynb
-    svm_kernels_and_margin.ipynb
-data/
-    hotel_bookings.csv
-```
 
 ### Topics Covered
 
@@ -25,42 +29,41 @@ data/
   - Impurity metrics: Gini, Entropy
   - Manual tree construction, pruning, and early stopping
   - Overfitting prevention and visual interpretation
+  >**Implementation Notebook:** [decisionTree.ipynb](pre_session/decisionTree.ipynb)
 
 * **K-Nearest Neighbors (KNN)**
   - Classification and regression use cases
   - Distance metrics: Euclidean, Manhattan
   - Optimizations with KD-Tree and Ball Tree structures
+    
+  >**Implementation Notebook:** [knn_classifier.ipynb](pre_session/knn_classifier.ipynb)
 
 * **Naive Bayes**
   - Probabilistic classification using conditional independence
   - Learn to Apply sentiment analysis with text-based features
 
+
 * **Support Vector Machines (SVM)**
   - Maximum-margin classifiers
   - Kernel methods: linear, polynomial, RBF
   - `SVC` vs `NuSVC`, model tuning using `GridSearchCV`
+    
+  >**Implementation Notebook:** [implementing_svm.ipynb](pre_session/implementing_svm.ipynb)
 
----
+
 
 ## Live Session
 
 * Built decision tree models and benchmarked against linear baselines
 * Applied pruning and interpretability techniques using visual tools
 
----
 
 ## Post-Session
-
-### Repository Structure
-
-```
-post_session/
-    decision_tree_classification_assignment.ipynb
-```
+ Used the Hotel Booking Demand dataset to build a Decision Tree Classifier for predicting booking cancellations.
 
 ### Task Overview
 
-Using the **Hotel Booking Demand** dataset (`hotel_bookings.csv`), a classification task was performed to predict booking cancellations:
+Using the **Hotel Booking Demand** dataset (`airnb_guest_arrival.csv`), a classification task was performed to predict booking cancellations:
 
 #### Task: Predict `is_canceled` with Decision Tree Classifier
 
@@ -73,7 +76,7 @@ Using the **Hotel Booking Demand** dataset (`hotel_bookings.csv`), a classificat
 * Evaluated performance using accuracy, confusion matrix, and classification report
 
 > **Implementation Notebook:**
-> [decision\_tree\_classification\_assignment.ipynb](post_session/decision_tree_classification_assignment.ipynb)
+> [decision\_tree\_classification\_assignment.ipynb](post_session/hotel_bookings_predicitions.ipynb)
 
 
 
